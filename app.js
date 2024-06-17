@@ -11,11 +11,11 @@ FormEle.addEventListener("submit",function(e){
     if (page==1){
         getdata();
         page++;
-        document.body.style.background = "linear-gradient(180deg, red 0%, red 50%, black 50%, black 55%, white 55%, white 100%)";
+        document.body.style.background = "linear-gradient(180deg, #ee4848 0%, #ee4848 50%, black 50%, black 55%, white 55%, white 100%)";
     } else {
         resetData();
         getdata();
-        document.body.style.background = "linear-gradient(180deg, red 0%, red 50%, black 50%, black 55%, white 55%, white 100%)";
+        document.body.style.background = "linear-gradient(180deg, #ee4848 0%, #ee4848 50%, black 50%, black 55%, white 55%, white 100%)";
     }
     
 })
@@ -68,6 +68,10 @@ const showPoke = (data) => {
 
         pokeDetail.appendChild(Bzone)
 
+        const Pokeimg = document.createElement("img");
+        Pokeimg.src=`${data.sprites.front_default}`;
+        Bzone.appendChild(Pokeimg);
+
         const pokeStat = document.createElement("div")
         pokeStat.classList.add("pokeStat")
         Bzone.appendChild(pokeStat)
@@ -94,9 +98,6 @@ const showPoke = (data) => {
             }
 
 
-        const Pokeimg = document.createElement("img");
-        Pokeimg.src=`${data.sprites.front_default}`;
-        Bzone.appendChild(Pokeimg);
 
 
         const Fzone = document.createElement("div");
