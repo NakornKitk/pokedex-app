@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background:red;
+    font-size: 16px;
+
+    padding: 0px;
+    margin: 0px;
+
+}
+
+h1 {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 80px;
+
+    font-size: 50px;
+
+    color: black;
+
+    padding: auto;
+}
+
+
+form {
+    width: 50vw;
+    margin: auto;
+    margin-bottom: 40px;
+    height: 80px;
+    background: white;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+
+    min-width: 350px;
+}
+
+form label {
+    background-color: rgb(243, 242, 239);
+
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+    min-width: 30%;
+    height: 100%;
+
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+}
+
+form label p{
+    margin: auto;
+}
+
+form input {
+    flex: 1;
+    height: 100%;
+    border: 0;
+    outline: 0;
+    color: black;
+    font-size: 18px;
+    padding: 0 30px;
+
+    min-width: 50%;
+}
+
+form button {
+    height: 100%;
+    min-width: 20%;
+
+    background: black;
+    color: #fff;
+
+    font-size: 18px;
+
+    border: 0;
+    outline: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    cursor: pointer;
+}
+
+
+#showPoke{
+    display:flex;
+    justify-content: center;
+}
+
+.pokeDetail {
+    padding: 15px 30px;
+    background-color: white;
+
+    width: 50%;
+    min-width: 350px;
+
+    border-radius: 15px;
+
+    border: 2px solid rgb(243, 242, 239);
+
+
+}
+
+
+.head-zone{
+    display: flex;
+    justify-content: space-between;
+
+    color:gray;
+}
+
+.numid{
+    margin-bottom: 0px;
+}
+
+.pokename{
+    margin-top:0px;
+    font-size: 40px;
+
+    color:black;
+}
+
+
+.body-zone{
+    display: flex;
+    justify-content: space-between;
+}
+
+.pokeStat {
+    width:50%;
+}
+
+.stat-bar {
+    width: 90%;
+    height: 20px;
+    padding: 5px;
+    background: #ddd;
+    border-radius: 5px;
+    position: relative;
+  }
+
+.stat {
+    background: red;
+    height: 10px;
+    position: relative;
+}
+
+.pokeStat > p {
+    margin-bottom: 5px;
+}
+
+img {
+    height: auto;
+    width: 50%;
+}
+
+.hw {
+    text-align: end;
+}
+
+
+
+
+
+.foot-zone {
+    color: gray
+}
+
