@@ -49,7 +49,7 @@ body {
 
     min-height: 100vh;
 
-    background: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)),url(/images/StockCake-Friends\ Using\ Smartphones_1722697641.jpg);
+    background: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)),url(./images/StockCake-Friends.jpg);
     background-size: cover;
     background-attachment: fixed;
 
