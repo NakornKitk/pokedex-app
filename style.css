@@ -2,26 +2,78 @@
     box-sizing: border-box;
 }
 
+nav, footer{
+    height: 50px;
+    background-color: white;
+    padding: 10px;
+
+    font-size: 20px;
+    font-weight:bolder;
+}
+
+nav>div>a>p, footer>p{
+    margin: auto 0px;
+}
+
+nav>div>a {
+    display: flex;
+    text-decoration: none;
+    color: black;
+    
+}
+
+a>p:hover {
+    text-decoration: underline; 
+}
+
+nav>div>a>svg {
+    width: 40px;
+    margin-right: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon {
+    width: 30px;
+}
+
 body {
     font-family: "Poppins",sans-serif;
-    background:#ee4848;
     font-size: 16px;
 
     padding: 0px;
     margin: 0px;
 
+    min-height: 100vh;
+
+    background: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)),url(/images/StockCake-Friends\ Using\ Smartphones_1722697641.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+
 }
 
-h1{
-    text-align: center;
-    margin-top: 100px;
-    margin-bottom: 80px;
+footer {
+    position:fixed;
+    width:100%;
+    bottom:0px;
+}
 
-    font-size: 50px;
+.header{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+
+    font-size: 30px;
 
     color: white;
+}
 
-    padding: auto;
+svg{
+    width: 55px;
+    padding-left: 10px;
 }
 
 
@@ -74,6 +126,10 @@ form input {
     width: 40%;
 }
 
+input:hover {
+    border:2px solid orange;
+}
+
 form button {
     height: 100%;
     width: 20%;
@@ -91,10 +147,15 @@ form button {
     cursor: pointer;
 }
 
+button:hover{
+    background-color: orange;
+}
+
 
 #showPoke{
     display:flex;
     justify-content: center;
+    margin-bottom: 100px;
 }
 
 .pokeDetail {
@@ -144,6 +205,7 @@ form button {
     width:50%;
 }
 
+
 .stat-bar {
     width: 90%;
     height: 20px;
@@ -166,6 +228,12 @@ form button {
 img {
     height: auto;
     width: 50%;
+
+    transition: transform .2s;
+}
+
+img:hover {
+    transform: scale(1.2);
 }
 
 .hw {
@@ -181,7 +249,12 @@ img {
 
 
 
+
 @media (max-width: 1024px) {
+
+    h1 {
+        font-size: 40px;
+    }
 
     .body-zone {
         flex-direction: column;
@@ -221,7 +294,7 @@ img {
 
 @media (max-width: 768px) {
     h1 {
-        font-size: 40px;
+        font-size: 25px;
     }
     .body-zone {
         flex-direction: column;
@@ -258,7 +331,6 @@ img {
 
 
     .pokeDetail {
-    
         width: 80%;
     
     }

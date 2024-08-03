@@ -7,15 +7,12 @@ let page=1;
 
 FormEle.addEventListener("submit",function(e){
     e.preventDefault();
-
     if (page==1){
         getdata();
         page++;
-        document.body.style.background = "linear-gradient(180deg, #ee4848 0%, #ee4848 50%, black 50%, black 55%, white 55%, white 100%)";
     } else {
         resetData();
         getdata();
-        document.body.style.background = "linear-gradient(180deg, #ee4848 0%, #ee4848 50%, black 50%, black 55%, white 55%, white 100%)";
     }
     
 })
