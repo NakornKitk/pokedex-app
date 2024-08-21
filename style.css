@@ -1,368 +1,337 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-nav, footer{
-    height: 60px;
-    background-color: white;
-    padding-top: 10px;
-    padding-bottom: 10px;
+nav,
+footer {
+  height: 60px;
+  background-color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
-    padding-left:175px;
-    padding-right:175px;
+  padding-left: 175px;
+  padding-right: 175px;
 
-    font-size: 20px;
-    font-weight:bolder;
+  font-size: 20px;
+  font-weight: bolder;
 }
 
-nav>div>a>p, footer>p{
-    margin: auto 0px;
+nav > div > a > p,
+footer > p {
+  margin: auto 0px;
 }
 
-nav>div>a {
-    display: flex;
-    text-decoration: none;
-    color: black;
-    
+nav > div {
+  display: flex;
 }
 
-a>p:hover {
-    text-decoration: underline; 
+nav > div > a {
+  display: flex;
+  text-decoration: none;
+  color: black;
 }
 
-nav>div>a>svg {
-    width: 40px;
-    margin-right: 10px;
+a > p:hover {
+  text-decoration: underline;
+}
+
+nav > div > a > svg {
+  width: 40px;
+  margin-right: 10px;
 }
 
 footer {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .icon {
-    width: 40px;
+  width: 40px;
 }
 
 body {
-    font-family: "Poppins",sans-serif;
-    font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
 
-    padding: 0px;
-    margin: 0px;
+  padding: 0px;
+  margin: 0px;
 
-    min-height: 100vh;
+  min-height: 100vh;
 
-    background: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)),url(./images/StockCake-Friends.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.1)
+    ),
+    url(./images/StockCake-Friends.jpg);
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 footer {
-    position:fixed;
-    width:100%;
-    bottom:0px;
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
 }
 
-.header{
-    display: flex;
-    justify-content: center;
-    margin: 50px;
+.header {
+  display: flex;
+  justify-content: center;
+  margin: 50px;
 
-    font-size: 30px;
+  font-size: 30px;
 
-    color: white;
+  color: white;
 }
 
 .header > h1 {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
-svg{
-    width: 50px;
+.header > a {
+  display: flex;
+  justify-content: center;
 }
 
+svg {
+  width: 50px;
+}
 
 form {
-    width: 50%;
-    margin: auto;
-    margin-bottom: 40px;
-    height: 80px;
-    background: white;
-    display: flex;
-    align-items: center;
-    border-radius: 10px;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 40px;
+  height: 80px;
+  background: white;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
 
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 form label {
-    background-color: rgb(243, 242, 239);
+  background-color: rgb(243, 242, 239);
 
-    text-align: center;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 
-    width: 40%;
-    height: 100%;
+  width: 40%;
+  height: 100%;
 
-    margin: auto;
+  margin: auto;
 
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 
-
-    padding: auto 1%;
+  padding: auto 1%;
 }
 
-form label p{
-    margin: auto;
+form label p {
+  margin: auto;
 }
 
 form input {
-    flex: 1;
-    height: 100%;
-    border: 0;
-    outline: 0;
-    color: black;
-    font-size: 18px;
-    padding: 0 30px;
+  flex: 1;
+  height: 100%;
+  border: 0;
+  outline: 0;
+  color: black;
+  font-size: 18px;
+  padding: 0 30px;
 
-    width: 40%;
+  width: 40%;
 }
 
 input:hover {
-    border:2px solid orange;
+  border: 2px solid orange;
 }
 
 form button {
-    height: 100%;
-    width: 20%;
+  height: 100%;
+  width: 20%;
 
-    background: black;
-    color: #fff;
+  background: black;
+  color: #fff;
 
-    font-size: 18px;
+  font-size: 18px;
 
-    border: 0;
-    outline: 0;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+  border: 0;
+  outline: 0;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 
-    cursor: pointer;
+  cursor: pointer;
 }
 
-button:hover{
-    background-color: orange;
+button:hover {
+  background-color: orange;
 }
 
-
-#showPoke{
-    display:flex;
-    justify-content: center;
-    margin-bottom: 100px;
+#showPoke {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
 }
 
 .pokeDetail {
-    padding: 15px 30px;
-    background-color: white;
+  padding: 15px 30px;
+  background-color: white;
 
-    width: 50%;
+  width: 50%;
 
-    border-radius: 15px;
+  border-radius: 15px;
 
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-
-
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
+.head-zone {
+  display: flex;
+  justify-content: space-between;
 
-.head-zone{
-    display: flex;
-    justify-content: space-between;
-
-    color:gray;
+  color: gray;
 }
 
-.head-zone div{
-    margin-right: 5%;
+.head-zone div {
+  margin-right: 5%;
 }
 
-
-.numid{
-    margin-bottom: 0px;
+.numid {
+  margin-bottom: 0px;
 }
 
-.pokename{
-    margin-top:0px;
-    font-size: 40px;
+.pokename {
+  margin-top: 0px;
+  font-size: 40px;
 
-    color:black;
+  color: black;
 }
 
-
-.body-zone{
-    display: flex;
-    justify-content: space-between;
+.body-zone {
+  display: flex;
+  justify-content: space-between;
 }
 
 .pokeStat {
-    width:50%;
+  width: 50%;
 }
 
-
 .stat-bar {
-    width: 90%;
-    height: 20px;
-    padding: 5px;
-    background: #ddd;
-    border-radius: 5px;
-    position: relative;
-  }
+  width: 90%;
+  height: 20px;
+  padding: 5px;
+  background: #ddd;
+  border-radius: 5px;
+  position: relative;
+}
 
 .stat {
-    background: red;
-    height: 10px;
-    position: relative;
+  background: red;
+  height: 10px;
+  position: relative;
 }
 
 .pokeStat > p {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 img {
-    height: auto;
-    width: 50%;
+  height: auto;
+  width: 50%;
 
-    transition: transform .2s;
+  transition: transform 0.2s;
 }
 
 img:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .hw {
-    text-align: end;
+  text-align: end;
 }
-
-
 
 .foot-zone {
-    color: gray
+  color: gray;
 }
 
-
 svg:hover {
-    transform-origin: center center;
-    animation: spin 3s infinite;
-    cursor: pointer;
+  transform-origin: center center;
+  animation: spin 3s infinite;
+  cursor: pointer;
 }
 
 @keyframes spin {
-    50% { transform: rotate(180deg); }
-    100% { transform: rotate(360deg); }
-    
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
-
-
-
 
 @media (max-width: 1024px) {
+  h1 {
+    font-size: 40px;
+  }
 
-    h1 {
-        font-size: 40px;
-    }
+  .body-zone {
+    flex-direction: column;
+  }
 
-    .body-zone {
-        flex-direction: column;
-    }
+  .body-zone {
+    display: flex;
+    justify-content: center;
+  }
 
+  .pokeStat {
+    width: 100%;
+  }
 
-    .body-zone{
-        display: flex;
-        justify-content: center;
-    }
-    
-    .pokeStat {
-        width:100%;
-    }
+  .stat-bar {
+    width: 100%;
+  }
 
-    .stat-bar{
-        width:100%;
-    }
+  img {
+    width: 100%;
+  }
 
-    img {
-        width: 100%;
-    }
+  form {
+    width: 60%;
+  }
 
+  .pokeDetail {
+    width: 60%;
+  }
 
-    form {
-        width:60%;
-    }
-
-
-
-    .pokeDetail {
-        width: 60%;
-    
-    }
-
-    nav, footer {
-        padding-left: 50px;
-        padding-right: 50px;
-    }
+  nav,
+  footer {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }
-
 
 @media (max-width: 640px) {
-    h1 {
-        font-size: 25px;
-    }
-    .body-zone {
-        flex-direction: column;
-    }
+  h1 {
+    font-size: 25px;
+  }
 
+  form {
+    width: 80%;
+    font-size: 12px;
+  }
 
-    .body-zone{
-        display: flex;
-        justify-content: center;
-    }
-    
-    .pokeStat {
-        width:100%;
-    }
+  form button,
+  form input {
+    font-size: 12px;
+  }
 
-    .stat-bar{
-        width:100%;
-    }
+  .pokeDetail {
+    width: 80%;
+  }
 
-    img {
-        width: 100%;
-    }
-
-
-    form {
-        width:80%;
-        font-size: 12px;
-    }
-
-
-    form button, form input {
-        font-size: 12px;
-    }
-
-
-    .pokeDetail {
-        width: 80%;
-    
-    }
-
-    nav, footer {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
+  nav,
+  footer {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
-
-
