@@ -3,9 +3,13 @@
 }
 
 nav, footer{
-    height: 50px;
+    height: 60px;
     background-color: white;
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    padding-left:175px;
+    padding-right:175px;
 
     font-size: 20px;
     font-weight:bolder;
@@ -37,7 +41,7 @@ footer {
 }
 
 .icon {
-    width: 30px;
+    width: 40px;
 }
 
 body {
@@ -71,9 +75,12 @@ footer {
     color: white;
 }
 
+.header > h1 {
+    margin-right: 10px;
+}
+
 svg{
-    width: 55px;
-    padding-left: 10px;
+    width: 50px;
 }
 
 
@@ -247,6 +254,18 @@ img:hover {
 }
 
 
+svg:hover {
+    transform-origin: center center;
+    animation: spin 3s infinite;
+    cursor: pointer;
+}
+
+@keyframes spin {
+    50% { transform: rotate(180deg); }
+    100% { transform: rotate(360deg); }
+    
+}
+
 
 
 
@@ -280,19 +299,24 @@ img:hover {
 
 
     form {
-        width:50%;
+        width:60%;
     }
 
 
 
     .pokeDetail {
-        width: 50%;
+        width: 60%;
     
+    }
+
+    nav, footer {
+        padding-left: 50px;
+        padding-right: 50px;
     }
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 640px) {
     h1 {
         font-size: 25px;
     }
@@ -334,4 +358,11 @@ img:hover {
         width: 80%;
     
     }
+
+    nav, footer {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
+
+

@@ -25,11 +25,16 @@ const getdata = async ()=> {
         const Pokelower = Poke.toLowerCase();
         const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${Pokelower}`);
         const data = await res.json();
+        document.body.style.background = "linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)),url(./images/success.jpg)";
+        document.body.style.backgroundSize = "cover" ;
+        document.body.style.backgroundAttachment = "fixed";
         showPoke(data)   
     } catch (err){
-        console.log(err);
+        document.body.style.background = "linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)),url(./images/Fail.jpg)";
+        document.body.style.backgroundSize = "cover" ;
+        document.body.style.backgroundAttachment = "fixed";
+        document.body.style.backgroundPosition = "20% 30%";
         alert("Pokemon name or ID are invalid!!");
-        document.body.style.background = "red";
     }
     
 }
