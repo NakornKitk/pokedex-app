@@ -69,20 +69,14 @@ const showPoke = (data) => {
     const src1 = `${data.sprites.front_default}`;
     const src2 = `${data.sprites.back_default}`;
 
-
     Pokeimg.src = src1;
-
     Bzone.appendChild(Pokeimg);
 
     function imgChange(src1,src2) {
-      const pic1 = src1;
-
       if (data.sprites.back_default === null) {
         src2 = `${data.sprites.front_shiny}`;
     }
     
-      const pic2 = src2;
-
       let isSrc1 = true;
 
       const intervalfunc = setInterval(() => {
